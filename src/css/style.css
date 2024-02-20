@@ -31,10 +31,11 @@ body{
     background-image: url("https://www.idownloadblog.com/wp-content/uploads/2023/06/iOS-17-Light-by-@iSWUpdates.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 295px;
-    height: 580px;
+    width: 285px;
+    height: 575px;
     position: absolute;
-    top: 0;
+    top: 5px;
+    left: 5px;
     z-index: -1;
     margin-left: 0.6%;
     border-radius: 60px;
@@ -51,8 +52,10 @@ body{
     justify-content: center;
 }
 .phone .phone-screen .lock-screen{
-    display: flex;
+   /* display: flex;*/
+   display: none;
     justify-content: center;
+    
 }
 .phone .lock-screen .calendar-widget{
     color: #fff;
@@ -115,4 +118,109 @@ marquee{
 }
 .signal-box i{
     font-size: 0.9rem;
+}
+
+/* Home Screen */
+
+.phone .home-screen{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.home-screen p{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    margin: 24px 0 0 45px;
+    font-weight: 300;
+}
+.app-icons{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: -100;
+    padding: 0;
+}
+.main-apps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 30px;
+    width: 300px;
+    height: 360px;
+    margin-top: 70px;
+}
+.bottom-apps-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 80%;
+    height: 70px;
+    top: 490px;
+    background-color: rgba(255, 255, 255, 0.7);
+    filter: blur(0.5);
+    border-radius: 25px;
+}
+.bottom-apps-area .bottom-apps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.bottom-apps-area .bottom-apps .bot-app{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+}
+.phone .phone-screen .home-screen .search{
+    width: 60px;
+    height: 18px;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.7);
+    position: absolute;
+    top: 455px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.phone .phone-screen .home-screen .search i{
+    font-size: 0.8rem;
+}
+.phone-bg{
+    filter: blur(0.4rem);
+}
+.app-icons span{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50px;
+}
+.app-names{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 360px;
+    position: absolute;
+    top: 100px;
+    gap: 15px;
+    padding: 0 30px;
+}
+.app-names .app-name{
+    color: #fff;
+    font-size: 10px;
 }
