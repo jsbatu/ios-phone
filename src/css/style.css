@@ -52,8 +52,7 @@ body{
     justify-content: center;
 }
 .phone .phone-screen .lock-screen{
-   /* display: flex;*/
-   display: none;
+    display: flex;
     justify-content: center;
     
 }
@@ -123,9 +122,8 @@ marquee{
 /* Home Screen */
 
 .phone .home-screen{
-    display: flex;
     justify-content: center;
-    
+    display: none;
 }
 
 .home-screen p{
@@ -141,7 +139,6 @@ marquee{
     width: 40px;
     height: 40px;
     background-color: #fff;
-    cursor: pointer;
     border-radius: 10px;
     margin-top: -100;
     padding: 0;
@@ -165,7 +162,7 @@ marquee{
     width: 80%;
     height: 70px;
     top: 490px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(222, 222, 222, 0.7);
     filter: blur(0.5);
     border-radius: 25px;
 }
@@ -200,14 +197,7 @@ marquee{
 .phone .phone-screen .home-screen .search i{
     font-size: 0.8rem;
 }
-.phone-bg{
-    filter: blur(0.4rem);
-}
-.app-icons span{
-    color: rgb(0, 0, 0);
-    position: absolute;
-    top: 50px;
-}
+
 .app-names{
     display: flex;
     align-items: center;
@@ -223,4 +213,5 @@ marquee{
 .app-names .app-name{
     color: #fff;
     font-size: 10px;
+    cursor: pointer;
 }

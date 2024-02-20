@@ -11,14 +11,14 @@
 <body>
     <div class="phone">
         <img src="https://deviceshots.com/images/devices/apple-iphone-11-black.png" alt="">
-        <div class="phone-bg"></div>
+        <div id="background" class="phone-bg"></div>
         <div class="phone-screen">
 
             <!--
                 Lock Screen
             -->
 
-            <div class="lock-screen">
+            <div id="lock-screen" class="lock-screen">
                 <marquee behavior="scroll" direction="left" scrollamount="1">jsbatu</marquee>
                 <div class="signal-box">
                     <i class="fa-solid fa-signal"></i>
@@ -37,14 +37,14 @@
                     </a>
                     
                 </div>
-                <div class="bottom-home-btn"></div>
+                <div id="locktohome"  class="bottom-home-btn"></div>
             </div>
  
             <!--
                 Home Screen
             -->
 
-            <div class="home-screen">
+            <div id="home-screen" class="home-screen">
                 <p>11:15</p>
                 <div class="signal-box">
                     <i class="fa-solid fa-signal"></i>
@@ -52,37 +52,37 @@
                 </div>
                 
                 <div class="main-apps">
-                    <div class="app-icons"></div> 
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
-                    <div class="app-icons"></div>
+                    <div style="background-image: url(https://cdn.iconscout.com/icon/free/png-256/free-settings-409-461608.png?f=webp); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div> 
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
+                    <div style="background-image: url(); background-size: cover; background-repeat: no-repeat;" class="app-icons"></div>
 
                     <!--
                         Names
                     -->
 
                     <div class="app-names">
-                        <div class="app-name">test app</div>
+                        <div class="app-name">Settings</div>
                         <div class="app-name">test app</div>
                         <div class="app-name">test app</div>
                         <div class="app-name">test app</div>
@@ -125,5 +125,8 @@
 
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--JQUERY KODUNUN DİĞER SCRİPTLERDEN ÖNCE OLDUĞUNA EMİN OL-->
+    <script src="/src/js/app.js"></script>
 </body>
 </html>
