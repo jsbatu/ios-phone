@@ -21,7 +21,7 @@ body{
 }
 .phone{
     position: absolute;
-    top: 70px;
+    top: 40px;
 }
 .phone img{
     width: 300px;
@@ -123,6 +123,7 @@ marquee{
 
 .phone .home-screen{
     justify-content: center;
+    display: flex;
     display: none;
 }
 
@@ -138,11 +139,14 @@ marquee{
 .app-icons{
     width: 40px;
     height: 40px;
-    background-color: #fff;
     border-radius: 10px;
     margin-top: -100;
     padding: 0;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
 }
+
 .main-apps{
     display: flex;
     align-items: center;
@@ -209,9 +213,117 @@ marquee{
     top: 100px;
     gap: 15px;
     padding: 0 30px;
+    cursor: pointer;
 }
 .app-names .app-name{
     color: #fff;
     font-size: 10px;
     cursor: pointer;
+}
+
+
+/* Youtube Screen */
+
+
+.youtube-screen{
+    width: 254px;
+    height: 520px;
+    position: relative;
+    justify-content: center;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    display: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-left: 5px;
+    margin-top: 50px;
+    border-radius:0px 0px 20px 20px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.youtube-screen::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.youtube-screen {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.youtube-screen .youtube-header{
+    width: 254px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    position: relative;
+}
+
+.top-gap{
+    width: 260px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: none;
+    z-index: -1;
+    top: 10px;
+    border-radius: 5px 5px 0 0 ;
+}
+
+
+.youtube-screen .youtube-header img{
+    width: 80px;
+    margin-left: 10px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+.youtube-videos .thumb img{
+    width: 254px;
+    cursor: pointer;
+    z-index: 9999;
+}
+.youtube-videos .ytb-video-title{
+    display: block;
+    margin: 5px 0 25px 0px;
+}
+#without-banner{
+    margin-left: 50px;
+}
+.youtube-videos .ytb-video-title div{
+    margin-left: 8px;
+    font-size: 1.2rem;
+    font: 400;
+}
+.channel-banner{
+    width: 35px;
+    height: 35px;
+    background-color: #111111;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    overflow: hidden;
+}
+.youtube-videos{
+    position: relative;
+    z-index: 999;
+}
+.mini-texts{
+    font-size: 0.9rem;
+}
+.youtube-btns{
+    width: 60px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.youtube-btns i{
+    cursor: pointer;
+    padding: 0 0 0 5px;
 }

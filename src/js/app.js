@@ -8,4 +8,15 @@ $(document).ready(function() {
             $("#lock-screen").show();
         }
     });
+
+    
+    $("#youtube").click(function() {
+        $("#youtube-screen, .top-gap").css("display", "block"); // Formun görünürlüğünü değiştirir,
+        if ($("#youtube-screen, .top-gap").is(":visible")) {
+            $("#home-screen").hide();
+        } else {
+            $("#home-screen").show();
+        }
+    });
+    
 });
