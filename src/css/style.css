@@ -227,7 +227,7 @@ marquee{
 
 .youtube-screen{
     width: 254px;
-    height: 520px;
+    height: 521px;
     position: relative;
     justify-content: center;
     display: none;
@@ -236,7 +236,7 @@ marquee{
     display: none;
     overflow: scroll;
     overflow-x: hidden;
-    margin-left: 5px;
+    margin-left: 6px;
     margin-top: 50px;
     border-radius:0px 0px 20px 20px;
 }
@@ -326,4 +326,69 @@ marquee{
 .youtube-btns i{
     cursor: pointer;
     padding: 0 0 0 5px;
+}
+
+.youtube-boxes{
+    width: 254px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    gap: 5px;
+}
+.ytb-compass{
+    width: 30px;
+    height: 22px;
+    background-color: #73737333;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ytb-compass i{
+    font-size: 1.4rem;
+}
+
+.ytb-box1{
+    width: 40px;
+    height: 22px;
+    background-color: #73737333;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.ytb-box2{
+    width: 50px;
+    height: 22px;
+    background-color: #73737333;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.ytb-box3{
+    width: 40px;
+    height: 22px;
+    background-color: #73737333;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.ytb-box4{
+    width: 40px;
+    height: 22px;
+    background-color: #73737333;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
