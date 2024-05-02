@@ -236,7 +236,7 @@ marquee{
     display: none;
     overflow: scroll;
     overflow-x: hidden;
-    margin-left: 6px;
+    margin-left: 5px;
     margin-top: 50px;
     border-radius:0px 0px 20px 20px;
 }
@@ -316,20 +316,32 @@ marquee{
     font-size: 0.9rem;
 }
 .youtube-btns{
-    width: 60px;
+    width: 80px;
+    height: 30px;
     background-color: rgb(255, 255, 255);
     font-size: 1.4rem;
     position: absolute;
     right: 0;
     top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
 }
 .youtube-btns i{
     cursor: pointer;
     padding: 0 0 0 5px;
 }
+.youtube-btns img{
+    width: 16px !important;
+    height: 18px;
+    margin-top: -5px;
+    margin-right: 60px;
+    cursor: pointer;
+}
 
 .youtube-boxes{
-    width: 254px;
+    width: 238px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -337,6 +349,8 @@ marquee{
     bottom: 5px;
     left: 7px;
     gap: 5px;
+    background-color: rgb(255, 255, 255);
+    overflow-x: scroll;
 }
 .ytb-compass{
     width: 30px;
@@ -355,27 +369,29 @@ marquee{
 .ytb-box1{
     width: 40px;
     height: 22px;
-    background-color: #73737333;
+    background-color: #000000;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: #fff;
 }
 .ytb-box2{
-    width: 50px;
+    width: 60px;
     height: 22px;
-    background-color: #73737333;
+    background-color: #a4a4a433;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border: 1px solid rgb(178, 0, 219);
 }
 .ytb-box3{
-    width: 40px;
+    width: 70px;
     height: 22px;
-    background-color: #73737333;
+    background-color: #a4a4a433;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -383,12 +399,95 @@ marquee{
     cursor: pointer;
 }
 .ytb-box4{
-    width: 40px;
+    width: 60px;
     height: 22px;
-    background-color: #73737333;
+    background-color: #a4a4a433;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+.ytb-box5{
+    width: 40px;
+    height: 22px;
+    background-color: #a4a4a433;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.youtube-boxes::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.youtube-boxes {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.youtube-footer{
+    width: 254px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 80px;
+    z-index: 999;
+    border-radius: 0 0 20px 20px;
+    border-top: 1px solid rgb(236, 236, 236);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.ytb-home, .ytb-shorts, .ytb-subs, .ytb-profile{
+    width: 19px;
+    height: 19px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 15px;
+} 
+.youtube-footer img{
+    width: 100%;
+}
+.ytb-profile img{
+    width: 19px; 
+    height: 19px;
+    border: 1px solid rgba(184, 184, 184, 0);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ytb-shorts{
+    margin-right: 20px;
+}
+.ytb-subs{
+    margin-left: 20px;
+}
+
+.youtube-btns img{
+    width: 10px;
+}
+
+.ytb-add{
+    font-size: 1.4rem;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 0 4px;
+    margin-bottom: 15px;
+}
+.youtube-footer p{
+    color: rgb(88, 88, 88);
+    font-size: 0.8rem;
+    z-index: 99;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+}
+
+#last-thumb{
+    margin-bottom: 20px;
 }
