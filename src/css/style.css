@@ -95,6 +95,17 @@ body{
     top: 555px;
     cursor: pointer;
 }
+.ytb-bottom-home-btn{
+    width: 90px;
+    height: 5px;
+    border-radius: 100px;
+    background-color: #00000098;
+    position: absolute;
+    bottom: 25px;
+    cursor: pointer;
+    z-index: 9999;
+    display:none;
+}
 marquee{
     color: #fff;
     position: absolute;
@@ -336,7 +347,7 @@ marquee{
     width: 16px !important;
     height: 18px;
     margin-top: -5px;
-    margin-right: 60px;
+    margin-right: 70px;
     cursor: pointer;
 }
 
@@ -435,7 +446,7 @@ marquee{
     height: 60px;
     background-color: rgb(255, 255, 255);
     position: fixed;
-    bottom: 80px;
+    top: 550px;
     z-index: 999;
     border-radius: 0 0 20px 20px;
     border-top: 1px solid rgb(236, 236, 236);
@@ -490,4 +501,160 @@ marquee{
 
 #last-thumb{
     margin-bottom: 20px;
+}
+
+
+
+/* Youtube video area */ 
+
+.youtube-video-1{
+    width: 254px;
+    height: 531px;
+    position: relative;
+    justify-content: center;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    display: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-left: 5px;
+    margin-top: 40px;
+    border-radius:0px 0px 20px 20px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.youtube-video-1, .youtube-reactions::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.youtube-video-1, .youtube-reactions{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.youtube-video-area{
+    width: 100%;
+    overflow: hidden;
+
+}
+.youtube-video-area video{
+    width: 100%;
+    height: 180px;
+    z-index: 99999;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-top-gap{
+    width: 260px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    display: none;
+    z-index: -1;
+    top: 10px;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.youtube-video-1 h2{
+    text-transform: uppercase;
+    margin: 10px 0 0 10px;
+}
+.youtube-video-1 p{
+    color: #00000098;
+    margin-left: 10px;
+}
+.channel-info .channel-profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.channel-profile{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.youtube-notification{
+    padding: 5px 8px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 15px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+.youtube-notification i{
+    color: #00000098;
+}
+.likeanddislike{
+    width: 100px;
+    height: 23px;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: rgb(232, 232, 232);
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.likeanddislike i{
+    font-size: 1.4rem;
+    margin:5px 0 0 10px;
+    cursor: pointer;
+}
+.likeanddislike p{
+    padding-right: 5px;
+    border-right: 1px solid rgb(171, 171, 171);
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+}
+.share{
+    width: 70px;
+    height: 23px;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: rgb(232, 232, 232);
+    cursor: pointer;
+
+}
+.share i{
+    font-size: 1.4rem;
+    margin:5px -5px 0 10px;
+    display: inline-block;
+}
+.share p{
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+}
+.youtube-reactions{
+    width: 300px;
+    height: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.ytb-download{
+    width: 90px;
+    height: 23px;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: rgb(232, 232, 232);
+    cursor: pointer;
+
+}
+.ytb-download i{
+    font-size: 1.4rem;
+    display: inline-block;
+    
+    margin:5px -5px 0 10px;
+} 
+.ytb-download p{
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
 }
